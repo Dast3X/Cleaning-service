@@ -49,10 +49,20 @@
           .replace(/\/\//g, "/");
       }
     </script>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </head>
   <body>
     <header>
       <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Main
+        </button>
         <div class="nav">
           <div class="nav-item"><a href="#service-block">Services</a></div>
           <div class="nav-item"><a href="#about-block">About</a></div>
@@ -139,6 +149,10 @@
             Cleaning<br />
             Apartment
           </div>
+          <div class="buy-desc">
+            We will clean: all rooms, toilets, electrical engineering,
+            appliances, windows
+          </div>
           <div class="price">29$/h</div>
           <div class="btn-buy"><a href="#order-block">Buy</a></div>
         </div>
@@ -147,6 +161,10 @@
             Cleaning<br />
             Office
           </div>
+          <div class="buy-desc">
+            We will clean: all rooms, toilets, electrical engineering, surfaces,
+            windows
+          </div>
           <div class="price">57$/h</div>
           <div class="btn-buy"><a href="#order-block">Buy</a></div>
         </div>
@@ -154,6 +172,10 @@
           <div class="buy-title">
             Cleaning<br />
             after renovation
+          </div>
+          <div class="buy-desc">
+            We will clean: all rooms, toilets, electrical engineering, surfaces,
+            remove all types of rubbish
           </div>
           <div class="price">35$/h</div>
           <div class="btn-buy"><a href="#order-block">Buy</a></div>
@@ -230,7 +252,7 @@
     </div>
     <div class="order-block" id="order-block">
       <div class="order-title">Order</div>
-      <form action="" method="post">
+      <form action="https://www.paypal.com/lv/signin" method="post">
         <div class="left-form">
           <div class="input-field">
             <label for="card number">Card number</label><br />

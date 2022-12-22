@@ -291,10 +291,10 @@ header {
 .price {
   font-family: "Tinos";
   font-weight: 500;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
-  padding-top: 101px;
-  color: #800000;
+  padding-top: 30px;
+  color: #000000;
 }
 .btn-buy {
   margin-right: 150px;
@@ -313,11 +313,15 @@ header {
 }
 .btn-buy {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 6px;
 }
 .buy-card:hover:after {
   transition: 1s;
   opacity: 35%;
+}
+.buy-card:hover > .buy-desc {
+  transition: 0.6s;
+  opacity: 0;
 }
 .buy-card:not(:hover):after {
   transition: 1s;
@@ -535,6 +539,16 @@ input {
   padding-right: 15px;
 }
 
+.buy-desc {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Tinos";
+  font-weight: 500;
+  font-size: 23px;
+  color: #740000;
+}
 @media (max-width: 1500px) {
   .container {
     padding: 0 0;
@@ -637,4 +651,25 @@ input {
     width: 226px;
     height: 40px;
   }
+}
+#myBtn {
+  font-family: "Tinos";
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: rgb(94, 5, 5);
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  opacity: 0.2;
+}
+#myBtn:hover {
+  background-color: rgb(184, 27, 27);
 }
