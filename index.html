@@ -18,7 +18,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clean service</title>
+    <title>Cleaning service</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $(function () {
@@ -255,19 +255,19 @@
       <form action="https://www.paypal.com/lv/signin" method="post">
         <div class="left-form">
           <div class="input-field">
-            <label for="card number">Card number</label><br />
+            <label id="card-number">Card number</label><br />
             <input maxlength="16" name="num" type="text" id="card" required />
           </div>
           <div class="input-field">
-            <label for="name&surname">Name & Surname</label><br />
+            <label id="lname&surname">Name & Surname</label><br />
             <input id="name&surname" type="text" required />
           </div>
           <div class="input-field">
-            <label for="country">Country</label><br />
+            <label id="lcountry">Country</label><br />
             <input id="country" type="text" required />
           </div>
           <div class="input-field">
-            <label for="option">Option</label><br />
+            <label id="option">Option</label><br />
             <select name="offer">
               <option value="Cleaning Apartment">Cleaning Apartment</option>
               <option value="Cleaning Office">Cleaning Office</option>
@@ -279,7 +279,7 @@
         </div>
         <div class="left-form">
           <div class="input-field">
-            <label for="Сard expiry date">Сard expiry date</label><br />
+            <label id="date">Сard expiry date</label><br />
             <div class="input-date">
               <input
                 type="text"
@@ -291,11 +291,11 @@
             </div>
           </div>
           <div class="input-field">
-            <label for="postcode">Postcode</label><br />
+            <label id="lpostcode">Postcode</label><br />
             <input maxlength="7" id="postcode" type="text" required />
           </div>
           <div class="input-field">
-            <label for="city">City</label><br />
+            <label id="lcity">City</label><br />
             <input id="city" type="text" required />
           </div>
           <div class="input-field">
